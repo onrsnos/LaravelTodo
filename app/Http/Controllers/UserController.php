@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use DataTables;
 use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\Hash;
 
+ 
 class UserController extends Controller
 {
     /**
@@ -58,7 +60,7 @@ class UserController extends Controller
 
             'name' => $request->name,
             'email' => $request->email,
-            'password' => Crypt::encryptString($request->password)
+            'password' => Hash::make($request->password)
 
             
         ]);
@@ -112,7 +114,10 @@ class UserController extends Controller
         $array['name'] = $request->name;
         $array['email'] = $request->email;
         if($request->password!=""){
-            $array['password'] = Crypt::encryptString($request->password);
+            $array['password'] = Hash::make($request->password);
+            // Crypt::encryptString($request->password);
+             
+
         }
         
         User::where('id', $request->id)->update($array);

@@ -128,6 +128,13 @@ return [
     // ],
 
     'aliases' => [
-        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+        'DataTables'    => Yajra\DataTables\Facades\DataTables::class,
+        'Route'         => Illuminate\Support\Facades\Route::class,
+        'Hash'          => Illuminate\Support\Facades\Hash::class,
+        'Auth'          => Illuminate\Support\Facades\Auth::class,
+
+
+
+
     ],
 ];

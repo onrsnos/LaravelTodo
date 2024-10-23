@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Gorevler;
 use DataTables;
-
+use Illuminate\Support\Facades\Hash;
 
 class GorevlerController extends Controller
 {
@@ -17,6 +17,9 @@ class GorevlerController extends Controller
     public function index()
     {
         //
+
+        // onrsnos@gmail.com  denemedeneme
+        // return Hash::make('plain-text-password');
 
         return view('gorevler');
 
