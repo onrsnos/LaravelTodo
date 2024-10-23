@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AnalysisController;
 use App\Http\Controllers\GorevlerController;
+use App\Http\Controllers\UserController;
 
 
 
@@ -17,6 +18,15 @@ Route::get('/gorevler/edit/{id}' , [GorevlerController::class, 'edit']);
 Route::POST('/gorevler/update' , [GorevlerController::class, 'update']);
 Route::get('/gorevler/destroy/{id}' , [GorevlerController::class, 'destroy']);
 Route::get('/gorevler/index_data', [GorevlerController::class, 'index_data']);
+
+
+Route::get('/users' , [UserController::class, 'index']);
+Route::get('/users/create' , [UserController::class, 'create']);
+Route::POST('/users/store' , [UserController::class, 'store']);
+Route::get('/users/edit/{id}' , [UserController::class, 'edit']);
+Route::POST('/users/update' , [UserController::class, 'update']);
+Route::get('/users/destroy/{id}' , [UserController::class, 'destroy']);
+Route::get('/users/index_data', [UserController::class, 'index_data']);
 
 
 // Route::get('/', function () {

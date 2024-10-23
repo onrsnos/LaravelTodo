@@ -15,7 +15,7 @@
                     <div class="text-center">
 
                         <a href="/gorevler" class="btn btn-success"> Görevler </a>
-                        <a href="/" class="btn btn-info"> örnek buton</a>
+                        <a href="/users" class="btn btn-info"> Kullanıcılar </a>
 
                     </div>
                 

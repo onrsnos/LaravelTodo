@@ -16,7 +16,7 @@
 
                         <h4>
 
-                            <label for=""> Yapılacaklar listesi </label>
+                            <label for=""> Kullanıcılar listesi </label>
                         </h4>
                     </div>
                     <div class="col-md-3"></div>
@@ -27,17 +27,17 @@
 
                     <div class="text-end">
 
-                        <a  class="btn btn-success text-right" href="/gorevler/create"> Oluştur </a>
+                        <a  class="btn btn-success text-right" href="/users/create"> Oluştur </a>
                         <a  class="btn btn-success text-right" href="/"> Geri Dön </a>
                     </div>
                     
-                    <table class="table table-borderless  table-striped " id="gorevler_table">
+                    <table class="table table-borderless  table-striped " id="users_table">
                         <thead class=" ">
                             <tr>
                             <th scope="col">#</th>
                             <th scope="col">İsim</th>
-                            <th scope="col">Açıklama</th>
-                            <th scope="col">Durum</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Oluşturulma Tarihi</th>
                             <th scope="col">Aksiyonlar</th>
                             </tr>
                         </thead>
@@ -58,18 +58,18 @@
 @section('js')
     <script>
         $(document).ready(function() {      
-            var table = $('#gorevler_table').DataTable({
+            var table = $('#users_table').DataTable({
                 
                 ajax: {
-                    url: "/gorevler/index_data"
+                    url: "/users/index_data"
                 },
 
                 columns: [
                     
                     {data: 'id', name: 'id'},
                     {data: 'name', name: 'name'},
-                    {data: 'description', name: 'description'},
-                    {data: 'status', name: 'status'},
+                    {data: 'email', name: 'email'},
+                    {data: 'created_at', name: 'created_at'},
                     {data: 'action', name: 'action'},
                 
                 ],
