@@ -29,7 +29,9 @@
                     <div class="text-end">
 
                         <a  class="btn btn-success text-right" href="/users/create"> Oluştur </a>
-                        <a  class="btn btn-success text-right" href="/"> Geri Dön </a>
+                        <a  class="btn btn-success text-right" href="/">
+                            <i class="fa fa-arrow-left" aria-hidden="true"></i> 
+                        </a>
                     </div>
                     
                     <table class="table table-borderless  table-striped " id="users_table">

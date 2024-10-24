@@ -28,7 +28,9 @@
 
                     <div class="text-end">
 
-                        <a  class="btn btn-success text-right" href="/gorevler"> Geri Dön </a>
+                        <a  class="btn btn-success text-right" href="/gorevler"> 
+                            <i class="fa fa-arrow-left" aria-hidden="true"></i> 
+                        </a>
 
                     </div>
                     

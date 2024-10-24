@@ -27,7 +27,9 @@
         <div class="text-end">
 
             <a  class="btn btn-success text-right" href="/gorevler/create"> Oluştur </a>
-            <a  class="btn btn-success text-right" href="/"> Geri Dön </a>
+            <a  class="btn btn-success text-right" href="/" aria-placeholder="Geri Dön">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i> 
+            </a>
         </div>
         
         <table class="table table-borderless  table-striped " id="gorevler_table">
