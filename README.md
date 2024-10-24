@@ -9,3 +9,6 @@ php artisan db:seed
 <br>
 php artisan serve 
 <br>
+npm install
+<br>
+npm run dev
