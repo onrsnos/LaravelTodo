@@ -5,26 +5,26 @@
 
 @section('content')
     <div class="main">
-        <div class="row">
+        {{-- <div class="row">
 
             <div class="col-md-2"></div>
-            <div class="col-md-8">
+            <div class="col-md-8"> --}}
 
                 <hr>
-                <div class="row mx-auto">
+                {{-- <div class="row mx-auto">
                     <div class="col-md-3"></div>
-                    <div class="col-md-6 mx-auto">
+                    <div class="col-md-6 mx-auto"> --}}
 
                         <h4>
 
                             <label for=""> Yeni Görev Oluşturma Sayfası </label>
                         </h4>
-                    </div>
+                    {{-- </div>
                     <div class="col-md-3"></div>
-                </div>
+                </div> --}}
                 <hr>
                 
-                <div>
+                {{-- <div> --}}
 
                     <div class="text-end">
 
@@ -82,9 +82,9 @@
                     </form>
     
                 </div>    
-            </div>
+            {{-- </div>
             <div class="col-md-2"></div>
-        </div>
+        </div> --}}
             
         
     </div>    
