@@ -86,7 +86,11 @@
 
         <div class="row">
             <div class="col-md-3">
-                @include('layouts.sidebar')
+                @if(auth()->user())
+                    
+                    @include('layouts.sidebar')
+
+                @endif
             </div>
             <div class="col-md-6">
 
